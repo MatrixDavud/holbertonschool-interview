@@ -10,8 +10,8 @@ def canUnlockAll(boxes):
     """
     n = len(boxes)
     answer = True
-    flag = 0
     for i in range(1, n):
+        flag = 0
         for j in range(n):
             if i in boxes[j] and j != i:
                 flag = 1
